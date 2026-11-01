@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-4ccd06f1-50d7-47e8-b3f7-ba406a37b6bb",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "acceptance",
+  "workOrderIds": [
+    "WO-fbce2509-e9a3-45b0-a91b-179b86db7492"
+  ],
+  "outcome": "accept",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [],
+  "reason": "Record resident acceptance of the independently inspected Repository City overview after verified PR merge. This completion record performs no git, merge, push, publication or deployment action; automatic Pages workflow status is separate from acceptance.",
+  "subject": {
+    "workOrderSha256": "10f3e5f884fc7be0a0c5bb332ac6cfc47a1afa07acd2678e30928ebf4747a565",
+    "charterSha256": "63dba02a328fd5bb0baa297ebd540debea53a48fe75608a78fd5d8b44e1cdb4a",
+    "delegationPolicySha256": "7f8269e86cf911c39bc01fa8f92b3e94acb5878a1b7a04947ddad53b80b75f0a"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Resident reported it has been merged in session 016cbab3-3e52-4d65-8cd7-b53bdc247517. GitHub verified https://github.com/WebeWizard/webe-website/pull/3 merged at 2026-11-01T04:15:52Z with merge commit 0af7a864c9f9b2d257b20632ab0aaaddaf98c0ab.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T04:16:44.166Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

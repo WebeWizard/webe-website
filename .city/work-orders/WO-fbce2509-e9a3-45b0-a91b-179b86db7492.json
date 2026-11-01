@@ -14,9 +14,9 @@
   "projectIds": [
     "website"
   ],
-  "status": "awaiting-merge",
+  "status": "completed",
   "createdAt": "2026-11-01T03:16:47.922Z",
-  "updatedAt": "2026-11-01T04:12:28.362Z",
+  "updatedAt": "2026-11-01T04:16:44.166Z",
   "history": [
     {
       "from": null,
@@ -77,6 +77,12 @@
       "to": "awaiting-merge",
       "reason": "PASS narrow independent reinspection at base c20d0724d8a093d449f51e65590613c906a09bec plus current worktree repairs. Chrome 156: City 320x900 clientWidth=305 scrollWidth=305 scrollX=0 with 15px vertical scrollbar; keyboard Enter on skip link retains #/webe-city and focuses main; refresh retains City title/content. City and About 1440x900 have no horizontal overflow; navigation/back and reduced motion pass. npm test exit 0; Vite production build write:false exit 0. Prior C1/C4/C5 full-inspection evidence retained; scope and resident draft-only authorization unchanged.",
       "timestamp": "2026-11-01T04:12:28.362Z"
+    },
+    {
+      "from": "awaiting-merge",
+      "to": "completed",
+      "reason": "Completion accepted by the resident in DEC-4ccd06f1-50d7-47e8-b3f7-ba406a37b6bb; recorded, not authenticated.",
+      "timestamp": "2026-11-01T04:16:44.166Z"
     }
   ],
   "provenance": {
