@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "title": "Upgrade the personal website to React",
+  "request": "Migrate the existing WebeWizard website to React, preserving its current content, visual design, navigation, and accessibility. Add a reproducible local development and production build, update tests and documentation, and adapt the existing GitHub Pages workflow to publish only the built website. Do not add personal facts, analytics, external runtime assets, paid services, or unrelated features. Implementation, merge, publication, and deployment require the applicable city decisions.",
+  "acceptanceCriteria": [
+    "The About page is rendered using React and retains the WebeWizard heading, supplied bio I am a wizard, existing visual design, semantic landmarks, skip link, and anchor navigation.",
+    "At 320px and desktop widths the website has no horizontal overflow; keyboard focus, WCAG AA text contrast, and reduced-motion support remain functional.",
+    "Documented commands reproducibly install locked dependencies, run the React development server, build production assets, and pass updated checks that validate the React-rendered page and built asset resolution beneath /webe-website/.",
+    "The GitHub Pages workflow builds and checks the React website before uploading only production output; existing main-only guards and least-privilege deployment permissions are preserved.",
+    "Delivery stays within site and .github/workflows, with separate city administrative records; independent inspection and resident acceptance precede merge or release, and no deployment or publication occurs without explicit resident authorization."
+  ],
+  "projectIds": [
+    "website",
+    "pages-deployment"
+  ],
+  "status": "awaiting-merge",
+  "createdAt": "2026-11-01T02:55:19.506Z",
+  "updatedAt": "2026-11-01T03:09:47.191Z",
+  "history": [
+    {
+      "from": null,
+      "to": "received",
+      "reason": "Petition received as draft intake, not delivery authorization.",
+      "timestamp": "2026-11-01T02:55:19.506Z"
+    },
+    {
+      "from": "received",
+      "to": "triaged",
+      "reason": "React upgrade confirmed by resident; website and pages-deployment are registered affected projects. Earlier static-site case is related but does not authorize a framework migration. Propose React with Vite, preserving current content, styling, accessibility, and project-path compatibility. Pages build adaptation requires a resident decision; no merge, release, deployment, permissions expansion, or paid resources are included.",
+      "timestamp": "2026-11-01T03:00:43.042Z"
+    },
+    {
+      "from": "triaged",
+      "to": "proposed",
+      "reason": "Resident-reviewed React + Vite plan: locked npm dependencies and dev/build/test commands in site; preserve existing CSS, About content, semantic landmarks, anchors, keyboard focus, contrast, reduced motion, responsive layout, and /webe-website/ assets. Update React-rendered and production artifact checks and documentation. Adapt Pages workflow to npm ci, build, test, and upload only site/dist with unchanged main guards and permissions. Verify 320px and desktop browser behavior. Main stays untouched; recovery by abandoning delivery branch. Independent inspection required. No push, merge, release, dispatch, paid resources, or actual deployment authorized.",
+      "timestamp": "2026-11-01T03:00:43.192Z"
+    },
+    {
+      "from": "proposed",
+      "to": "awaiting-approval",
+      "reason": "Resident confirmed the reviewed plan and lifecycle advancement in session 53d40f1a-4890-4384-baaa-05b8cf72e2e9. Deployment/publication-related workflow preparation requires a resident decision; no actual release, push, merge, workflow dispatch, permissions expansion, or deployment is in scope.",
+      "timestamp": "2026-11-01T03:00:43.302Z"
+    },
+    {
+      "from": "awaiting-approval",
+      "to": "authorized",
+      "reason": "Delivery authorized by resident in DEC-cb0cb346-b3fb-496b-984a-4e872f814862; recorded, not authenticated.",
+      "timestamp": "2026-11-01T03:00:49.040Z"
+    },
+    {
+      "from": "authorized",
+      "to": "in-progress",
+      "reason": "Assigned engineer begins approved React + Vite migration on feature/react-vite-upgrade; no push, merge, release or deployment.",
+      "timestamp": "2026-11-01T03:04:02.931Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "React + Vite implementation ready on feature/react-vite-upgrade working tree. npm.cmd ci --prefix site, npm.cmd run build --prefix site, npm.cmd test --prefix site and git diff --check pass. React client mounts current content; production JS/CSS under /webe-website/. Browser measured scrollWidth 320/1440 equal viewport, focus outline 3px and visible skip-link transform, all anchors tabIndex 0; DOM About activation navigates #about; reduced motion auto. Integrated browser automated key/click stability failed, so physical keyboard sequence is not claimed verified. Main and release untouched; no push/merge/deployment. Separate municipal authorization and assignment records preserved.",
+      "timestamp": "2026-11-01T03:06:40.429Z"
+    },
+    {
+      "from": "inspection",
+      "to": "awaiting-merge",
+      "reason": "PASS: independent delivery inspection of feature/react-vite-upgrade, HEAD 896bea51908d2db5bfe8410aa0320031b2dad974 plus listed uncommitted changes. npm.cmd test --prefix site and git diff --check passed; city status/validate report adopted governance, no drift, linked authorization DEC-cb0cb346-b3fb-496b-984a-4e872f814862, and active assigned municipal-software-engineer. Criterion checks pass; production browser evidence in the inspection record reports 320/1440 overflow, visible focus/skip-link, anchor activation, and reduced motion. Physical keyboard traversal was not independently verified. No push, merge, dispatch, publication, or deployment; resident acceptance remains required.",
+      "timestamp": "2026-11-01T03:09:47.191Z"
+    }
+  ],
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

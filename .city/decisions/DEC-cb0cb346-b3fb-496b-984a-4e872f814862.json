@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-cb0cb346-b3fb-496b-984a-4e872f814862",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "authorization",
+  "workOrderIds": [
+    "WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6"
+  ],
+  "outcome": "authorize",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [
+    "deployment",
+    "publication"
+  ],
+  "reason": "Authorize React + Vite implementation and deployment/publication-related workflow preparation under the reviewed proposal only. Preserve existing permissions. No actual push, merge, publication, workflow dispatch, release or deployment. Engineering Manager assignment and independent inspection required.",
+  "subject": {
+    "workOrderSha256": "ff730b94833b571e3eda23dde941252b1a27676457767fe1b2ac85b300e3c2f2",
+    "charterSha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+    "delegationPolicySha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Resident selected: Authorize this plan and lifecycle advancement; no merge or release. Session 53d40f1a-4890-4384-baaa-05b8cf72e2e9.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T03:00:49.040Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}
