@@ -1,4 +1,4 @@
-name: Package Pages artifact
+name: Publish Pages site
 
 on:
   push:
@@ -15,7 +15,23 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Check site
+        run: node site/tests/check-site.mjs
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/public
+  deploy:
+    needs: package-site
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -68,8 +68,27 @@ assert.match(workflow, /branches:\s*\[main\]/);
 assert.match(workflow, /workflow_dispatch:/);
 assert.match(workflow, /if:\s*github\.ref == .refs\/heads\/main./, "Manual dispatch must be restricted to main");
 assert.match(workflow, /permissions:\s*\n\s+contents:\s+read/);
-assert.doesNotMatch(workflow, /write-all|pages:\s*write|id-token:\s*write|deploy-pages/i, "Artifact-only workflow must not grant deployment permissions or deploy");
 assert.match(workflow, /actions\/upload-pages-artifact@/);
 assert.match(workflow, /path:\s*site\/public/);
 assert.doesNotMatch(workflow, /path:\s*site\s*$/m, "Docs and tests must not be included in the published artifact");
-console.log("PASS semantic HTML, keyboard/focus hooks, project-relative asset, responsive CSS, reduced motion, WCAG contrast, and artifact-only workflow checks");
+
+function workflowJob(name) {
+  const start = workflow.indexOf(`  ${name}:\n`);
+  assert.notEqual(start, -1, `Missing ${name} workflow job`);
+  const contentStart = start + `  ${name}:\n`.length;
+  const nextJob = workflow.slice(contentStart).search(/^  [\w-]+:\s*$/m);
+  return workflow.slice(contentStart, nextJob === -1 ? undefined : contentStart + nextJob);
+}
+const packageJob = workflowJob("package-site");
+const deployJob = workflowJob("deploy");
+for (const [name, job] of [["package-site", packageJob], ["deploy", deployJob]]) {
+  assert.match(job, /if:\s*github\.ref == .refs\/heads\/main./, `${name} must run only on main, including manual dispatch`);
+}
+assert.match(packageJob, /run:\s*node site\/tests\/check-site\.mjs/);
+assert.ok(packageJob.indexOf("node site/tests/check-site.mjs") < packageJob.indexOf("actions/upload-pages-artifact@"), "Site checks must pass before artifact upload");
+assert.match(deployJob, /needs:\s*package-site/);
+assert.match(deployJob, /permissions:\s*\n\s+pages:\s*write\s*\n\s+id-token:\s*write/);
+assert.doesNotMatch(deployJob, /contents:\s*write|write-all/i, "Deployment permissions must remain job-scoped and minimal");
+assert.match(deployJob, /environment:\s*\n\s+name:\s*github-pages\s*\n\s+url:\s*\$\{\{\s*steps\.deployment\.outputs\.page_url\s*\}\}/);
+assert.match(deployJob, /id:\s*deployment\s*\n\s+uses:\s*actions\/deploy-pages@/);
+console.log("PASS semantic HTML, keyboard/focus hooks, project-relative asset, responsive CSS, reduced motion, WCAG contrast, and guarded Pages deployment workflow checks");
