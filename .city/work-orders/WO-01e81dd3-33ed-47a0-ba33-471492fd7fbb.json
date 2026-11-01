@@ -14,9 +14,9 @@
     "website",
     "pages-deployment"
   ],
-  "status": "inspection",
+  "status": "awaiting-merge",
   "createdAt": "2026-11-01T02:01:21.890Z",
-  "updatedAt": "2026-11-01T02:31:38.814Z",
+  "updatedAt": "2026-11-01T02:37:28.215Z",
   "history": [
     {
       "from": null,
@@ -83,6 +83,12 @@
       "to": "inspection",
       "reason": "Branch feature/webewizard-static-pages at 8b47e8a. node site/tests/check-site.mjs passed, including fail-closed assertions for exact workflow permissions, main-only guards, site checks before public-only artifact upload, and deploy job wiring; git diff --check passed. Authenticated Pages API confirms build_type=workflow. No workflow was dispatched, no deployment or merge occurred; PR #1 remains open and awaits independent inspection/resident acceptance. Prior failure and reinspection history retained; no independent approval claimed.",
       "timestamp": "2026-11-01T02:31:38.814Z"
+    },
+    {
+      "from": "inspection",
+      "to": "awaiting-merge",
+      "reason": "Independent inspection PASS at implementation revision a0c3cc7d64106f073766d910c19dd93a9a5f4d9e: node site/tests/check-site.mjs and git diff --check passed; measured contrast 17.69:1, 10.56:1, 11.27:1. Browser verified 320px and 1440px with CSS loaded and no horizontal overflow, visible 3px keyboard focus, and reduced-motion scroll behavior auto. Asset resolves under /webe-website/. Authenticated Pages API reports workflow build type; both jobs main-only, deploy needs package-site, github-pages environment and job-scoped pages/id-token permissions; artifact is site/public only. Resident-directed .city decision/lifecycle/assignment records are separate administrative records, not website implementation scope; no policy controls changed. PR #1 open/unmerged; no deployment records or workflow dispatch. Commit authorship does not authenticate role. Final PR acceptance remains the resident decision.",
+      "timestamp": "2026-11-01T02:37:28.215Z"
     }
   ],
   "provenance": {
