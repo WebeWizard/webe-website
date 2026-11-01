@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "districts": [
+    {
+      "id": "repository",
+      "name": "Repository",
+      "path": ".",
+      "description": "Default district covering this repository."
+    }
+  ]
+}

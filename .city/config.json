@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "plugin": {
+    "name": "repository-city",
+    "version": "0.3.0"
+  },
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "name": "webe-website",
+  "createdAt": "2026-11-01T01:46:44.962Z",
+  "governance": "adopted",
+  "adoption": {
+    "adoptedOn": "2026-10-31",
+    "recordedAt": "2026-11-01T01:51:04.062Z",
+    "charter": {
+      "path": "charter.md",
+      "sha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+      "version": null
+    },
+    "policies": [
+      {
+        "path": "policies/authority-and-policy.md",
+        "sha256": "2b50c02a30d877596799ff269040c121d475186b4e4be8877239286980f9d8a9"
+      },
+      {
+        "path": "policies/continuity-and-accountability.md",
+        "sha256": "460abb417f117d4e429b932c041baca153ee5957285d7b3a3bc105878aa60e5f"
+      },
+      {
+        "path": "policies/council-delegation.md",
+        "sha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+      },
+      {
+        "path": "policies/records-and-privacy.md",
+        "sha256": "e4ac19ed06b73075bdad212de0b47ecf55b4edd7d752a85e2617a8187ff8bfce"
+      },
+      {
+        "path": "policies/resources-and-workforce.md",
+        "sha256": "c8feb7c171635be227875eefb17f782f7e9ea2964d70ea7d9c9927963a4b3420"
+      },
+      {
+        "path": "policies/service-catalogue.md",
+        "sha256": "2b8e264375708b5bb5197fd57bf0d9495f4fd30a64ba7cda4720869be7ecce47"
+      },
+      {
+        "path": "policies/workforce-delegation.md",
+        "sha256": "0a50825cc53b1bd2bde68848ed331f9fca05a4be6221aed2cc9f2709d5d7877c"
+      }
+    ],
+    "evidence": {
+      "rule": "resident-declaration",
+      "declaredBy": "WebeWizard",
+      "reference": "Resident WebeWizard declared adoption of the reviewed charter and policies effective 2026-10-31 America/Phoenix; no additional organizational, legal, or hosting requirements are known to the resident.",
+      "authenticated": false
+    }
+  }
+}

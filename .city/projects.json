@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "website",
+      "name": "Personal Website",
+      "path": "site",
+      "description": "Public personal website with bio and about content"
+    },
+    {
+      "id": "pages-deployment",
+      "name": "GitHub Pages Deployment",
+      "path": ".github/workflows",
+      "description": "GitHub Actions workflows for publishing the personal website to GitHub Pages"
+    }
+  ]
+}

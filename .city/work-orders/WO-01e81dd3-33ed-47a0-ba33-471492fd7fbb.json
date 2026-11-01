@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "WO-01e81dd3-33ed-47a0-ba33-471492fd7fbb",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "title": "Create WebeWizard personal website on GitHub Pages",
+  "request": "Create a polished personal website for WebeWizard with bio and about content only, hosted from this repository using the default GitHub Pages project URL. Create a new GitHub repository named webe-website and commit and push this repository. Propose the visual design; do not invent personal facts. Repository visibility and public release approval remain unresolved.",
+  "acceptanceCriteria": [
+    "The website identifies WebeWizard and contains bio and about content only; no invented personal facts or private information are published.",
+    "The website is responsive at 320px and desktop widths, keyboard navigable, and uses readable accessible contrast.",
+    "Website assets work under the /webe-website/ project path and a GitHub Pages workflow publishes only the website artifact after explicit resident publication approval.",
+    "The new webe-website GitHub repository receives a verified initial push after its owner, visibility, and release scope are confirmed."
+  ],
+  "projectIds": [
+    "website",
+    "pages-deployment"
+  ],
+  "status": "received",
+  "createdAt": "2026-11-01T02:01:21.890Z",
+  "updatedAt": "2026-11-01T02:01:21.890Z",
+  "history": [
+    {
+      "from": null,
+      "to": "received",
+      "reason": "Petition received as draft intake, not delivery authorization.",
+      "timestamp": "2026-11-01T02:01:21.890Z"
+    }
+  ],
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}
