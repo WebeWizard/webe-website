@@ -14,15 +14,81 @@
     "website",
     "pages-deployment"
   ],
-  "status": "received",
+  "status": "awaiting-merge",
   "createdAt": "2026-11-01T02:01:21.890Z",
-  "updatedAt": "2026-11-01T02:01:21.890Z",
+  "updatedAt": "2026-11-01T02:37:28.215Z",
   "history": [
     {
       "from": null,
       "to": "received",
       "reason": "Petition received as draft intake, not delivery authorization.",
       "timestamp": "2026-11-01T02:01:21.890Z"
+    },
+    {
+      "from": "received",
+      "to": "triaged",
+      "reason": "Resident confirmed website and pages-deployment boundaries, public repository creation and publication of sanitized records. WebeWizard/webe-website initial push verified at 01b073b. Public name WebeWizard; supplied bio: I am a wizard. Route to a static-site proposal; deployment, publication and workflow permissions are reserved resident matters.",
+      "timestamp": "2026-11-01T02:04:26.464Z"
+    },
+    {
+      "from": "triaged",
+      "to": "proposed",
+      "reason": "Resident-approved proposal: single static HTML/CSS page in site, deep navy and violet accents with restrained stars, WebeWizard heading and supplied statement I am a wizard as bio/about, no invented facts. System fonts; no JavaScript, framework, analytics, external assets, paid services or custom domain. Related documentation and dependency-free checks inside site; Pages workflow in .github/workflows uploads only site, runs on main/manual dispatch. Check 320px/mobile/desktop layout, keyboard focus, WCAG AA text contrast, reduced motion and relative asset paths under /webe-website/. Feature branch, independent inspection and PR for resident acceptance; no automatic merge. Configure Pages Actions with minimum permissions. Recovery: main unchanged until acceptance, then disable workflow or revert accepted change.",
+      "timestamp": "2026-11-01T02:04:34.272Z"
+    },
+    {
+      "from": "proposed",
+      "to": "awaiting-approval",
+      "reason": "Plan and intake routing explicitly approved in session b7d375c0-e9f3-4821-a820-0f0f7172c75d. Reserved security (minimum workflow/environment permissions), deployment and publication require a separate resident decision. Governance, deletion and paid expenditure are outside scope. Initial repository creation and push criteria already verified.",
+      "timestamp": "2026-11-01T02:04:40.641Z"
+    },
+    {
+      "from": "awaiting-approval",
+      "to": "authorized",
+      "reason": "Delivery authorized by resident in DEC-7ea51e76-153a-496b-8709-ef3475b1fb24; recorded, not authenticated.",
+      "timestamp": "2026-11-01T02:04:54.765Z"
+    },
+    {
+      "from": "authorized",
+      "to": "in-progress",
+      "reason": "Branch feature/webewizard-static-pages at 01b073bb0d9ffd3db0666c6939f990c09054dea8; begin authorized static bio page, accessibility checks, and Pages artifact workflow.",
+      "timestamp": "2026-11-01T02:07:53.330Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages, implementation revision 494ed1f384bd9390bb9e5f7d93024578f888da30; node site/tests/check-site.mjs and git diff --check passed; Chrome rendered 320px and 1440px with no horizontal overflow; keyboard Tab verified skip link, wordmark, About link, and visible focus; Pages build_type=workflow verified; no deployment run.",
+      "timestamp": "2026-11-01T02:13:09.012Z"
+    },
+    {
+      "from": "inspection",
+      "to": "in-progress",
+      "reason": "Inspection fail at 551c121ca84dc926e50bbd0e5008bb49f32c74aa: changed .city decision/work-order/assignment paths are outside registered project directories site and .github/workflows; Pages API returned 404 so server setting is unverified. Independent test/browser checks passed; PR #1 remains open.",
+      "timestamp": "2026-11-01T02:18:05.106Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages at 551c121ca84dc926e50bbd0e5008bb49f32c74aa; node site/tests/check-site.mjs and git diff --check passed. Current unauthenticated Pages API GET returned 404; Pages configuration not changed because enabling it could build/publish before acceptance. Resident explicitly directed preservation/inclusion of approved .city decision, lifecycle, and assignment records; these remain outside registered project directories and were not altered to evade the Inspector finding. Commit authorship does not authenticate municipal staff role. PR description update could not be completed with available noninteractive GitHub credential tooling; PR remains open at same revision. Request fresh independent review of the scope issue and these facts; no merge or deployment.",
+      "timestamp": "2026-11-01T02:23:02.148Z"
+    },
+    {
+      "from": "inspection",
+      "to": "in-progress",
+      "reason": "Implement resident-approved post-acceptance deployment job with dependency-free checks and main-only guarded deploy; preserve prior failure/reinspection history and retain no merge or deployment before resident acceptance.",
+      "timestamp": "2026-11-01T02:30:23.590Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages at 8b47e8a. node site/tests/check-site.mjs passed, including fail-closed assertions for exact workflow permissions, main-only guards, site checks before public-only artifact upload, and deploy job wiring; git diff --check passed. Authenticated Pages API confirms build_type=workflow. No workflow was dispatched, no deployment or merge occurred; PR #1 remains open and awaits independent inspection/resident acceptance. Prior failure and reinspection history retained; no independent approval claimed.",
+      "timestamp": "2026-11-01T02:31:38.814Z"
+    },
+    {
+      "from": "inspection",
+      "to": "awaiting-merge",
+      "reason": "Independent inspection PASS at implementation revision a0c3cc7d64106f073766d910c19dd93a9a5f4d9e: node site/tests/check-site.mjs and git diff --check passed; measured contrast 17.69:1, 10.56:1, 11.27:1. Browser verified 320px and 1440px with CSS loaded and no horizontal overflow, visible 3px keyboard focus, and reduced-motion scroll behavior auto. Asset resolves under /webe-website/. Authenticated Pages API reports workflow build type; both jobs main-only, deploy needs package-site, github-pages environment and job-scoped pages/id-token permissions; artifact is site/public only. Resident-directed .city decision/lifecycle/assignment records are separate administrative records, not website implementation scope; no policy controls changed. PR #1 open/unmerged; no deployment records or workflow dispatch. Commit authorship does not authenticate role. Final PR acceptance remains the resident decision.",
+      "timestamp": "2026-11-01T02:37:28.215Z"
     }
   ],
   "provenance": {

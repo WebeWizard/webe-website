@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-7ea51e76-153a-496b-8709-ef3475b1fb24",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "authorization",
+  "workOrderIds": [
+    "WO-01e81dd3-33ed-47a0-ba33-471492fd7fbb"
+  ],
+  "outcome": "authorize",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [
+    "security",
+    "deployment",
+    "publication"
+  ],
+  "reason": "Resident explicitly authorized the exact proposal in case history: static bio/about page for WebeWizard with supplied text I am a wizard; responsive keyboard-accessible WCAG AA design and relative Pages assets; site-only workflow and Actions Pages configuration with minimum permissions. Public repository initial push verified. Feature branch commit/push, independent inspection and PR creation allowed. No automatic merge or deployment before resident final PR acceptance. No governance change, deletion or paid expenditure. Charter reserved-matter rule and adopted council delegation require this resident decision.",
+  "subject": {
+    "workOrderSha256": "4fd7bd53f51dad0110e9d0923c8b7751ce63d1e6e3ce86b9fb717b167200cd68",
+    "charterSha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+    "delegationPolicySha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Session b7d375c0-e9f3-4821-a820-0f0f7172c75d: resident answered approve_plan_and_routing=true and authorize_delivery=true to the exact static website, minimum Pages permissions, deployment/publication and no-automatic-merge proposal on 2026-10-31 America/Phoenix.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T02:04:54.765Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}
