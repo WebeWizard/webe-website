@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-9d65015f-2361-4a86-9032-ec1182888d50",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "authorization",
+  "workOrderIds": [
+    "WO-fbce2509-e9a3-45b0-a91b-179b86db7492"
+  ],
+  "outcome": "authorize",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [
+    "publication"
+  ],
+  "reason": "Following independent Council review and referral DEC-2f706de0-2170-4e6a-a1e6-644f2206c0fc, authorize only preparation and implementation of the resident-reviewed high-level Repository City draft page and its navigation, accessibility, tests and documentation within site on a non-default branch, plus required separate city records. All five acceptance criteria apply. No private source, records or internal details; no external repository link or open-source claim. Independent inspection required. This resolves the publication reservation for draft content preparation only; push, merge, public release, deployment, workflow changes, expenditure and repository visibility changes remain excluded.",
+  "subject": {
+    "workOrderSha256": "a017ca0ac2f2514c7185b34964a3ea969950c06162160100a5d29d2e8d14202f",
+    "charterSha256": "63dba02a328fd5bb0baa297ebd540debea53a48fe75608a78fd5d8b44e1cdb4a",
+    "delegationPolicySha256": "7f8269e86cf911c39bc01fa8f92b3e94acb5878a1b7a04947ddad53b80b75f0a"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Resident response to Council referral DEC-2f706de0-2170-4e6a-a1e6-644f2206c0fc in session 016cbab3-3e52-4d65-8cd7-b53bdc247517; preview pending actual confirmation.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T03:30:35.994Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

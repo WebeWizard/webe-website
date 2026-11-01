@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ASN-5b71ac4d-748f-4b83-addc-3ad57af3dd30",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "workOrderId": "WO-fbce2509-e9a3-45b0-a91b-179b86db7492",
+  "staffId": "municipal-software-engineer",
+  "assignedBy": "engineering-manager",
+  "reason": "Assign the sole active engineer based on documented, direct React 19/Vite delivery of this same website (WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6): implemented the React app and Pages base-path behavior, preserved accessibility/responsiveness, passed the existing build/test checks, and completed independent inspection and resident acceptance. This is demonstrated React/Vite competence, not generic software ability alone, and the current page/navigation extension is narrower. HR declined REQ-78ac8eab-e599-47b4-9a3a-dc286911bb88 on that existing-fit evidence. Limit work to the authorized site scope on a non-default branch; no private source/records, new dependencies, workflow changes, push, merge, publication, deployment, or self-inspection; hand off independently for inspection.",
+  "createdAt": "2026-11-01T03:35:20.215Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

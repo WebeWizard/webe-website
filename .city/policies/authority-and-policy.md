@@ -1,6 +1,6 @@
-# Authority, deliberation, and policy lifecycle — DRAFT
+# Authority, deliberation, and policy lifecycle
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** No human is enrolled, no policy is current, and no authority is conferred by this text.
+**Adopted policy.** The resident declaration, effective date, and exact adopted revision are recorded in `../config.json`. Adoption records do not authenticate identity or grant system permissions.
 
 **Proposed owner:** City Clerk. City Manager identifies jurisdiction and external obligations; the independent City Auditor reviews disputes. Specialist advice is sought when competence is missing.
 

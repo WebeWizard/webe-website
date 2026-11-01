@@ -1,6 +1,6 @@
-# Records, custody, access, and privacy — DRAFT
+# Records, custody, access, and privacy
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** This proposes recordkeeping duties; it does not create official decisions, approved retention periods, access grants, or completed registers.
+**Adopted policy.** The resident declaration, effective date, and exact adopted revision are recorded in `../config.json`. This establishes recordkeeping duties; it does not itself create official decisions, approved retention periods, access grants, or completed registers.
 
 **Proposed owner:** Records Officer. The Clerk owns decision provenance and register links; the Auditor independently checks completeness and integrity, with only appropriately authorized access.
 

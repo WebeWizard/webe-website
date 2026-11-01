@@ -1,8 +1,8 @@
-# Specialist engineering appointments — DRAFT
+# Specialist engineering appointments
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** No appointment authority
-is delegated by this text until the resident adopts it with the charter and
-policies (`adopt`) or records it later with `amend`. Draft governance, policy
+**Adopted policy.** The resident declaration, effective date, and exact adopted
+revision are recorded in `../config.json`. Appointment delegation depends on
+that recorded adoption, not this text alone. Draft governance, policy
 drift, or absence of this policy from the adopted revision means no specialist
 hire may proceed.
 

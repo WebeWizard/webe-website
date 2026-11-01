@@ -1,6 +1,6 @@
-# Service catalogue and portfolio — DRAFT
+# Service catalogue and portfolio
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** No service commitment, priority, delivery authorization, budget, or SLA is approved here. Delivery authorization follows the council delegation policy once adopted.
+**Adopted policy.** The resident declaration, effective date, and exact adopted revision are recorded in `../config.json`. No specific service commitment, priority, delivery authorization, budget, or SLA is approved by this policy alone. Delivery authorization follows the adopted council delegation policy.
 
 **Proposed owner:** Resident Services. **Accountable coordinator:** City Manager. Chief Planner maintains proposed sequencing; the Clerk records resident decisions. These titles do not appoint employees.
 

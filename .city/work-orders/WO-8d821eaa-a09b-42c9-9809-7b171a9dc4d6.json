@@ -15,9 +15,9 @@
     "website",
     "pages-deployment"
   ],
-  "status": "awaiting-merge",
+  "status": "completed",
   "createdAt": "2026-11-01T02:55:19.506Z",
-  "updatedAt": "2026-11-01T03:09:47.191Z",
+  "updatedAt": "2026-11-01T03:16:40.284Z",
   "history": [
     {
       "from": null,
@@ -66,6 +66,12 @@
       "to": "awaiting-merge",
       "reason": "PASS: independent delivery inspection of feature/react-vite-upgrade, HEAD 896bea51908d2db5bfe8410aa0320031b2dad974 plus listed uncommitted changes. npm.cmd test --prefix site and git diff --check passed; city status/validate report adopted governance, no drift, linked authorization DEC-cb0cb346-b3fb-496b-984a-4e872f814862, and active assigned municipal-software-engineer. Criterion checks pass; production browser evidence in the inspection record reports 320/1440 overflow, visible focus/skip-link, anchor activation, and reduced motion. Physical keyboard traversal was not independently verified. No push, merge, dispatch, publication, or deployment; resident acceptance remains required.",
       "timestamp": "2026-11-01T03:09:47.191Z"
+    },
+    {
+      "from": "awaiting-merge",
+      "to": "completed",
+      "reason": "Completion accepted by the resident in DEC-973a0328-5955-48e3-b13c-c0acdaaa1805; recorded, not authenticated.",
+      "timestamp": "2026-11-01T03:16:40.284Z"
     }
   ],
   "provenance": {
