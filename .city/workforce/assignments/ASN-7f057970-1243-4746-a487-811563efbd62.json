@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ASN-7f057970-1243-4746-a487-811563efbd62",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "workOrderId": "WO-01e81dd3-33ed-47a0-ba33-471492fd7fbb",
+  "staffId": "municipal-software-engineer",
+  "assignedBy": "engineering-manager",
+  "reason": "Assign the active bundled Municipal Software Engineer: the authorized scope is a bounded static HTML/CSS personal page, responsive/accessibility verification, in-scope documentation and dependency-free checks, and a least-permission GitHub Pages Actions workflow. These are ordinary repository web implementation and existing workflow tasks; the general engineer is active, has no conflicting assignment, and no specialist competency gap is demonstrated. Preserve the non-deployment/no-merge limits and hand off independently for inspection.",
+  "createdAt": "2026-11-01T02:06:00.287Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

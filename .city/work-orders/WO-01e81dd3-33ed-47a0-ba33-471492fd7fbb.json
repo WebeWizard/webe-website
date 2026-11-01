@@ -14,15 +14,45 @@
     "website",
     "pages-deployment"
   ],
-  "status": "received",
+  "status": "in-progress",
   "createdAt": "2026-11-01T02:01:21.890Z",
-  "updatedAt": "2026-11-01T02:01:21.890Z",
+  "updatedAt": "2026-11-01T02:07:53.330Z",
   "history": [
     {
       "from": null,
       "to": "received",
       "reason": "Petition received as draft intake, not delivery authorization.",
       "timestamp": "2026-11-01T02:01:21.890Z"
+    },
+    {
+      "from": "received",
+      "to": "triaged",
+      "reason": "Resident confirmed website and pages-deployment boundaries, public repository creation and publication of sanitized records. WebeWizard/webe-website initial push verified at 01b073b. Public name WebeWizard; supplied bio: I am a wizard. Route to a static-site proposal; deployment, publication and workflow permissions are reserved resident matters.",
+      "timestamp": "2026-11-01T02:04:26.464Z"
+    },
+    {
+      "from": "triaged",
+      "to": "proposed",
+      "reason": "Resident-approved proposal: single static HTML/CSS page in site, deep navy and violet accents with restrained stars, WebeWizard heading and supplied statement I am a wizard as bio/about, no invented facts. System fonts; no JavaScript, framework, analytics, external assets, paid services or custom domain. Related documentation and dependency-free checks inside site; Pages workflow in .github/workflows uploads only site, runs on main/manual dispatch. Check 320px/mobile/desktop layout, keyboard focus, WCAG AA text contrast, reduced motion and relative asset paths under /webe-website/. Feature branch, independent inspection and PR for resident acceptance; no automatic merge. Configure Pages Actions with minimum permissions. Recovery: main unchanged until acceptance, then disable workflow or revert accepted change.",
+      "timestamp": "2026-11-01T02:04:34.272Z"
+    },
+    {
+      "from": "proposed",
+      "to": "awaiting-approval",
+      "reason": "Plan and intake routing explicitly approved in session b7d375c0-e9f3-4821-a820-0f0f7172c75d. Reserved security (minimum workflow/environment permissions), deployment and publication require a separate resident decision. Governance, deletion and paid expenditure are outside scope. Initial repository creation and push criteria already verified.",
+      "timestamp": "2026-11-01T02:04:40.641Z"
+    },
+    {
+      "from": "awaiting-approval",
+      "to": "authorized",
+      "reason": "Delivery authorized by resident in DEC-7ea51e76-153a-496b-8709-ef3475b1fb24; recorded, not authenticated.",
+      "timestamp": "2026-11-01T02:04:54.765Z"
+    },
+    {
+      "from": "authorized",
+      "to": "in-progress",
+      "reason": "Branch feature/webewizard-static-pages at 01b073bb0d9ffd3db0666c6939f990c09054dea8; begin authorized static bio page, accessibility checks, and Pages artifact workflow.",
+      "timestamp": "2026-11-01T02:07:53.330Z"
     }
   ],
   "provenance": {
