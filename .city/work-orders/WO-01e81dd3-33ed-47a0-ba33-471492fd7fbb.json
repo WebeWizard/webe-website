@@ -16,7 +16,7 @@
   ],
   "status": "inspection",
   "createdAt": "2026-11-01T02:01:21.890Z",
-  "updatedAt": "2026-11-01T02:13:09.012Z",
+  "updatedAt": "2026-11-01T02:31:38.814Z",
   "history": [
     {
       "from": null,
@@ -59,6 +59,30 @@
       "to": "inspection",
       "reason": "Branch feature/webewizard-static-pages, implementation revision 494ed1f384bd9390bb9e5f7d93024578f888da30; node site/tests/check-site.mjs and git diff --check passed; Chrome rendered 320px and 1440px with no horizontal overflow; keyboard Tab verified skip link, wordmark, About link, and visible focus; Pages build_type=workflow verified; no deployment run.",
       "timestamp": "2026-11-01T02:13:09.012Z"
+    },
+    {
+      "from": "inspection",
+      "to": "in-progress",
+      "reason": "Inspection fail at 551c121ca84dc926e50bbd0e5008bb49f32c74aa: changed .city decision/work-order/assignment paths are outside registered project directories site and .github/workflows; Pages API returned 404 so server setting is unverified. Independent test/browser checks passed; PR #1 remains open.",
+      "timestamp": "2026-11-01T02:18:05.106Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages at 551c121ca84dc926e50bbd0e5008bb49f32c74aa; node site/tests/check-site.mjs and git diff --check passed. Current unauthenticated Pages API GET returned 404; Pages configuration not changed because enabling it could build/publish before acceptance. Resident explicitly directed preservation/inclusion of approved .city decision, lifecycle, and assignment records; these remain outside registered project directories and were not altered to evade the Inspector finding. Commit authorship does not authenticate municipal staff role. PR description update could not be completed with available noninteractive GitHub credential tooling; PR remains open at same revision. Request fresh independent review of the scope issue and these facts; no merge or deployment.",
+      "timestamp": "2026-11-01T02:23:02.148Z"
+    },
+    {
+      "from": "inspection",
+      "to": "in-progress",
+      "reason": "Implement resident-approved post-acceptance deployment job with dependency-free checks and main-only guarded deploy; preserve prior failure/reinspection history and retain no merge or deployment before resident acceptance.",
+      "timestamp": "2026-11-01T02:30:23.590Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages at 8b47e8a. node site/tests/check-site.mjs passed, including fail-closed assertions for exact workflow permissions, main-only guards, site checks before public-only artifact upload, and deploy job wiring; git diff --check passed. Authenticated Pages API confirms build_type=workflow. No workflow was dispatched, no deployment or merge occurred; PR #1 remains open and awaits independent inspection/resident acceptance. Prior failure and reinspection history retained; no independent approval claimed.",
+      "timestamp": "2026-11-01T02:31:38.814Z"
     }
   ],
   "provenance": {
