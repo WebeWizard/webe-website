@@ -14,9 +14,9 @@
     "website",
     "pages-deployment"
   ],
-  "status": "in-progress",
+  "status": "inspection",
   "createdAt": "2026-11-01T02:01:21.890Z",
-  "updatedAt": "2026-11-01T02:07:53.330Z",
+  "updatedAt": "2026-11-01T02:13:09.012Z",
   "history": [
     {
       "from": null,
@@ -53,6 +53,12 @@
       "to": "in-progress",
       "reason": "Branch feature/webewizard-static-pages at 01b073bb0d9ffd3db0666c6939f990c09054dea8; begin authorized static bio page, accessibility checks, and Pages artifact workflow.",
       "timestamp": "2026-11-01T02:07:53.330Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Branch feature/webewizard-static-pages, implementation revision 494ed1f384bd9390bb9e5f7d93024578f888da30; node site/tests/check-site.mjs and git diff --check passed; Chrome rendered 320px and 1440px with no horizontal overflow; keyboard Tab verified skip link, wordmark, About link, and visible focus; Pages build_type=workflow verified; no deployment run.",
+      "timestamp": "2026-11-01T02:13:09.012Z"
     }
   ],
   "provenance": {
