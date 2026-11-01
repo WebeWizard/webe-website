@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-29b3389f-0ed1-4de5-ac10-aa23850ba3bf",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "acceptance",
+  "workOrderIds": [
+    "WO-01e81dd3-33ed-47a0-ba33-471492fd7fbb"
+  ],
+  "outcome": "accept",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [],
+  "reason": "Resident accepts the independently inspected personal website delivered through PR #1; merge and successful Pages deployment verified.",
+  "subject": {
+    "workOrderSha256": "dcba8ed4962b3ed907a1b6cb2503099dffe88aaa05d58560c935b55f0b81b8ba",
+    "charterSha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+    "delegationPolicySha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Resident stated: it worked, i accept. PR https://github.com/WebeWizard/webe-website/pull/1 merged 2026-11-01T02:40:09Z at 6154372f7ff42e288493dbdfb653690bbdc8a21b; deployment run https://github.com/WebeWizard/webe-website/actions/runs/41266143174 succeeded.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T02:41:28.991Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}
