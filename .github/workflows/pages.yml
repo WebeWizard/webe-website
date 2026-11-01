@@ -15,12 +15,22 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci --prefix site
+      - name: Build React site
+        run: npm run build --prefix site
       - name: Check site
-        run: node site/tests/check-site.mjs
-      - name: Upload public site artifact
+        run: npm test --prefix site
+      - name: Upload built site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/public
+          path: site/dist
   deploy:
     needs: package-site
     if: github.ref == 'refs/heads/main'

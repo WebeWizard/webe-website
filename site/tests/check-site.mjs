@@ -1,19 +1,25 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import App from "../src/App.js";
 
 const siteRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const html = await readFile(resolve(siteRoot, "public/index.html"), "utf8");
-const css = await readFile(resolve(siteRoot, "public/assets/styles.css"), "utf8");
-const workflow = await readFile(resolve(siteRoot, "../.github/workflows/pages.yml"), "utf8");
+const document = await readFile(resolve(siteRoot, "dist/index.html"), "utf8");
+const html = renderToStaticMarkup(createElement(App));
+const css = await readFile(resolve(siteRoot, "src/styles.css"), "utf8");
+const workflow = (await readFile(resolve(siteRoot, "../.github/workflows/pages.yml"), "utf8")).replace(/\r\n/g, "\n");
 
-assert.match(html, /<html lang="en">/);
-assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1">/);
-assert.match(html, /<title>WebeWizard — About<\/title>/);
+assert.match(document, /<html lang="en">/);
+assert.match(document, /<meta name="viewport" content="width=device-width, initial-scale=1">/);
+assert.match(document, /<title>WebeWizard — About<\/title>/);
+assert.match(document, /<div id="root"><\/div>/);
+assert.match(document, /<noscript>.+<\/noscript>/);
 assert.match(html, /<h1 id="page-title">WebeWizard<\/h1>/);
 assert.match(html, /<p class="bio">I am a wizard<\/p>/);
-assert.doesNotMatch(html, /<script\b|\son[a-z]+=/i, "The page must remain static HTML/CSS without script or inline handlers");
+assert.doesNotMatch(html, /<script\b|\son[a-z]+=/i, "React content must not inject scripts or inline handlers");
 assert.doesNotMatch(html, /https?:\/\//i, "No external assets or links are permitted");
 assert.match(html, /<main id="main-content">/);
 assert.match(html, /class="skip-link" href="#main-content"/);
@@ -21,12 +27,18 @@ assert.match(html, /<nav aria-label="Main navigation">/);
 assert.match(html, /href="#about"/);
 assert.match(html, /class="stars" aria-hidden="true"/);
 
-const stylesheet = html.match(/<link rel="stylesheet" href="([^"]+)">/);
-assert.ok(stylesheet, "A local stylesheet link is required");
-assert.ok(!stylesheet[1].startsWith("/"), "The stylesheet path must be relative");
-const deployedAsset = new URL(stylesheet[1], "https://webeWizard.github.io/webe-website/");
-assert.ok(deployedAsset.pathname.startsWith("/webe-website/"), `Asset must resolve under project path, got ${deployedAsset.pathname}`);
-assert.equal(deployedAsset.pathname, "/webe-website/assets/styles.css");
+const assets = [...document.matchAll(/(?:src|href)="([^"]+)"/g)].map((match) => match[1]);
+assert.ok(assets.some((asset) => asset.endsWith(".js")), "Built React JavaScript is required");
+assert.ok(assets.some((asset) => asset.endsWith(".css")), "Built CSS is required");
+for (const asset of assets) {
+  assert.ok(asset.startsWith("/webe-website/assets/"), `Unexpected asset path: ${asset}`);
+  const deployedAsset = new URL(asset, "https://webeWizard.github.io/webe-website/");
+  assert.ok(deployedAsset.pathname.startsWith("/webe-website/"));
+  const content = await readFile(resolve(siteRoot, "dist", asset.slice("/webe-website/".length)), "utf8");
+  assert.ok(content.length > 0, `Built asset is empty: ${asset}`);
+}
+const builtFiles = await readdir(resolve(siteRoot, "dist"), { recursive: true });
+assert.ok(builtFiles.every((file) => file === "index.html" || file === "assets" || file.startsWith("assets/") || file.startsWith("assets\\")), "Only website assets may be published");
 
 function colorFrom(token) {
   const match = css.match(new RegExp(`${token}:\\s*(#[0-9a-f]{6})`, "i"));
@@ -71,7 +83,7 @@ const workflowPermissions = workflow.match(/^permissions:\r?\n((?:  [\w-]+:\s*[\
 assert.ok(workflowPermissions, "Workflow-level permissions must be explicitly declared");
 assert.deepEqual(workflowPermissions[1].trim().split(/\r?\n/).map((line) => line.trim()), ["contents: read"]);
 assert.match(workflow, /actions\/upload-pages-artifact@/);
-assert.match(workflow, /path:\s*site\/public/);
+assert.match(workflow, /path:\s*site\/dist/);
 assert.doesNotMatch(workflow, /path:\s*site\s*$/m, "Docs and tests must not be included in the published artifact");
 
 function workflowJob(name) {
@@ -86,12 +98,18 @@ const deployJob = workflowJob("deploy");
 for (const [name, job] of [["package-site", packageJob], ["deploy", deployJob]]) {
   assert.match(job, /if:\s*github\.ref == .refs\/heads\/main./, `${name} must run only on main, including manual dispatch`);
 }
-assert.match(packageJob, /run:\s*node site\/tests\/check-site\.mjs/);
-assert.ok(packageJob.indexOf("node site/tests/check-site.mjs") < packageJob.indexOf("actions/upload-pages-artifact@"), "Site checks must pass before artifact upload");
+assert.match(packageJob, /cache-dependency-path:\s*site\/package-lock\.json/);
+assert.match(packageJob, /run:\s*npm ci --prefix site/);
+assert.match(packageJob, /run:\s*npm run build --prefix site/);
+assert.match(packageJob, /run:\s*npm test --prefix site/);
+const steps = ["npm ci --prefix site", "npm run build --prefix site", "npm test --prefix site", "actions/upload-pages-artifact@"];
+for (let index = 1; index < steps.length; index++) {
+  assert.ok(packageJob.indexOf(steps[index - 1]) < packageJob.indexOf(steps[index]), "Install, build, checks, and upload must run in order");
+}
 assert.match(deployJob, /needs:\s*package-site/);
 const deployPermissions = deployJob.match(/^    permissions:\r?\n((?:      [\w-]+:\s*[\w-]+\r?\n)+)/m);
 assert.ok(deployPermissions, "Deployment permissions must be explicitly job-scoped");
 assert.deepEqual(deployPermissions[1].trim().split(/\r?\n/).map((line) => line.trim()), ["pages: write", "id-token: write"]);
 assert.match(deployJob, /environment:\s*\n\s+name:\s*github-pages\s*\n\s+url:\s*\$\{\{\s*steps\.deployment\.outputs\.page_url\s*\}\}/);
 assert.match(deployJob, /id:\s*deployment\s*\n\s+uses:\s*actions\/deploy-pages@/);
-console.log("PASS semantic HTML, keyboard/focus hooks, project-relative asset, responsive CSS, reduced motion, WCAG contrast, and guarded Pages deployment workflow checks");
+console.log("PASS React-rendered content, production assets, accessibility hooks, contrast, and guarded Pages build/deployment checks");

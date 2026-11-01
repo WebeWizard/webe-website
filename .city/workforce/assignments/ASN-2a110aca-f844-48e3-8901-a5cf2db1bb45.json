@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ASN-2a110aca-f844-48e3-8901-a5cf2db1bb45",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "workOrderId": "WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6",
+  "staffId": "municipal-software-engineer",
+  "assignedBy": "engineering-manager",
+  "reason": "Assign the sole active bundled Municipal Software Engineer: this authorized React + Vite migration, preserving an existing small static HTML/CSS About page and its accessibility, responsive design and supplied content, adding locked npm dev/build/test workflow checks, and adapting the existing guarded Pages workflow within site and .github/workflows are ordinary software-engineering duties. Existing project checks already cover semantic landmarks, focus, reduced motion, contrast, responsive rules, project-relative assets, main-only guards, least-privilege permissions and artifact boundaries. The general engineer has read/search/edit/execute tools and no demonstrated React, accessibility, Vite or workflow-specific competency gap requires a specialist. Preserve the explicit no push/merge/release/dispatch/deployment limits and hand off independently for inspection.",
+  "createdAt": "2026-11-01T03:03:34.299Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}
