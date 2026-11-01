@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-2f706de0-2170-4e6a-a1e6-644f2206c0fc",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "authorization",
+  "workOrderIds": [
+    "WO-fbce2509-e9a3-45b0-a91b-179b86db7492"
+  ],
+  "outcome": "refer",
+  "decidedBy": "city-council",
+  "basis": "council-delegation",
+  "routineClass": null,
+  "reservedMatters": [
+    "publication"
+  ],
+  "reason": "Criteria 1-4 define bounded, observable page content, navigation and refresh behavior, preservation/accessibility/responsive checks, and documentation/tests/build verification; criterion 5 limits delivery to a non-default branch and separate records and preserves independent inspection and resident acceptance. However, the proposed React page and copy are expressly intended for the public personal website (registered project description), so preparing public-facing content may itself fall within adopted publication reservation even though push, merge, release, and deployment are excluded. The resident confirmed the high-level draft disclosure and plan, not authority to deliver or publish it. Refer publication for the resident's decision; no other reserved matter is identified.",
+  "subject": {
+    "workOrderSha256": "a017ca0ac2f2514c7185b34964a3ea969950c06162160100a5d29d2e8d14202f",
+    "charterSha256": "63dba02a328fd5bb0baa297ebd540debea53a48fe75608a78fd5d8b44e1cdb4a",
+    "delegationPolicySha256": "7f8269e86cf911c39bc01fa8f92b3e94acb5878a1b7a04947ddad53b80b75f0a"
+  },
+  "evidence": {
+    "declaredBy": null,
+    "reference": null,
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T03:28:59.847Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

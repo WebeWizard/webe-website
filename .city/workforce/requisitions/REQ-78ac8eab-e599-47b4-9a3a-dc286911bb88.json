@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "REQ-78ac8eab-e599-47b4-9a3a-dc286911bb88",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "workOrderId": "WO-fbce2509-e9a3-45b0-a91b-179b86db7492",
+  "staffId": "react-website-engineer",
+  "title": "React Website Engineer",
+  "reason": "This authorized order requires implementation in an existing React 19/Vite site, including a dedicated React route, navigation, title/focus behavior, and route-specific tests. Workforce policy and this request require a React specialist for React website work. The only active engineer is the bundled general municipal-software-engineer; status lists no active React specialist or React competency, so no active specialist fit is recorded. Requisition the minimum specialist post for this work order only; keep implementation separate from independent inspection and outside publication, deployment, merge, or push.",
+  "duties": "Implement and test the approved Repository City React page and in-scope navigation, responsive/accessibility behavior, and related site documentation within site only; preserve About and existing design; verify existing site checks and build. Do not change authorization/workflows, deployment, publication, dependencies, visibility, or private source/records; do not inspect, merge, push, or deploy.",
+  "competencies": [
+    "React 19/Vite routing and GitHub Pages base path; accessible semantic navigation, keyboard focus/page-title handling, responsive CSS and reduced motion; test route behavior with existing project patterns; protect approved copy and site-only scope."
+  ],
+  "standards": [
+    "Use existing React/Vite dependencies and site conventions; meet all five authorized criteria; existing npm test and npm run build pass, with browser checks for direct route/refresh, navigation/back, keyboard, reduced motion and 320px/desktop widths. No new dependencies or external content."
+  ],
+  "tools": [
+    "read",
+    "search",
+    "edit",
+    "execute"
+  ],
+  "checks": [
+    [
+      "npm",
+      "test"
+    ]
+  ],
+  "mcpProposals": [],
+  "status": "declined",
+  "appointment": null,
+  "createdAt": "2026-11-01T03:32:28.284Z",
+  "updatedAt": "2026-11-01T03:34:03.556Z",
+  "history": [
+    {
+      "from": null,
+      "to": "requested",
+      "actor": "engineering-manager",
+      "reason": "This authorized order requires implementation in an existing React 19/Vite site, including a dedicated React route, navigation, title/focus behavior, and route-specific tests. Workforce policy and this request require a React specialist for React website work. The only active engineer is the bundled general municipal-software-engineer; status lists no active React specialist or React competency, so no active specialist fit is recorded. Requisition the minimum specialist post for this work order only; keep implementation separate from independent inspection and outside publication, deployment, merge, or push.",
+      "timestamp": "2026-11-01T03:32:28.284Z"
+    },
+    {
+      "from": "requested",
+      "to": "declined",
+      "actor": "human-resources",
+      "reason": "Need is documented and tied to the authorized React 19/Vite work order, and the proposed duties, observable competencies, least-privilege tools, existing npm test argv check, and separation from inspection/publication are generally well scoped. However, the active bundled Municipal Software Engineer was assigned to and successfully delivered the React + Vite migration of this same site (WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6), which includes the existing React 19 app, Vite base path, accessible responsive behavior, tests, and an independent inspection. This is direct relevant demonstrated experience, not merely generic capability; the requested bounded page/navigation extension does not establish a remaining specialist gap or need for a new post under the existing-fit rule. Reconsider using the active engineer. Check limitation: npm test reads built dist and does not build it; standards separately require npm run build and browser verification, so these should be explicitly included in checks/evidence if resubmitted.",
+      "timestamp": "2026-11-01T03:34:03.556Z"
+    }
+  ],
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

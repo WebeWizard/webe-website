@@ -10,47 +10,96 @@
   "governance": "adopted",
   "adoption": {
     "adoptedOn": "2026-10-31",
-    "recordedAt": "2026-11-01T01:51:04.062Z",
+    "recordedAt": "2026-11-01T03:26:18.454Z",
     "charter": {
       "path": "charter.md",
-      "sha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+      "sha256": "63dba02a328fd5bb0baa297ebd540debea53a48fe75608a78fd5d8b44e1cdb4a",
       "version": null
     },
     "policies": [
       {
         "path": "policies/authority-and-policy.md",
-        "sha256": "2b50c02a30d877596799ff269040c121d475186b4e4be8877239286980f9d8a9"
+        "sha256": "787e2073bde49f2c94e6dafc278181c9b8261eed8a8bf9a642df2d55f905850a"
       },
       {
         "path": "policies/continuity-and-accountability.md",
-        "sha256": "460abb417f117d4e429b932c041baca153ee5957285d7b3a3bc105878aa60e5f"
+        "sha256": "5ecb3710b7263ca4aaeff66a1101e5eefca88d1f173e6f8de904f829b111abc5"
       },
       {
         "path": "policies/council-delegation.md",
-        "sha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+        "sha256": "7f8269e86cf911c39bc01fa8f92b3e94acb5878a1b7a04947ddad53b80b75f0a"
       },
       {
         "path": "policies/records-and-privacy.md",
-        "sha256": "e4ac19ed06b73075bdad212de0b47ecf55b4edd7d752a85e2617a8187ff8bfce"
+        "sha256": "ddc269f5faf8dfce023bb7d48614ee0226520d88860629ae02337c7981b1b1bc"
       },
       {
         "path": "policies/resources-and-workforce.md",
-        "sha256": "c8feb7c171635be227875eefb17f782f7e9ea2964d70ea7d9c9927963a4b3420"
+        "sha256": "bf8b195d5d84cd739b44e7fd81e5ade524892c3c589556e38425a1b560d6269d"
       },
       {
         "path": "policies/service-catalogue.md",
-        "sha256": "2b8e264375708b5bb5197fd57bf0d9495f4fd30a64ba7cda4720869be7ecce47"
+        "sha256": "a09889fddfe84f111dc4fe6ddee5eacbf595d1e208911a963c7f35455c5eebfe"
       },
       {
         "path": "policies/workforce-delegation.md",
-        "sha256": "0a50825cc53b1bd2bde68848ed331f9fca05a4be6221aed2cc9f2709d5d7877c"
+        "sha256": "3e66a1251c59947c86f44eb43eea6555343f2c9da1e245805691b7fc5e33418d"
       }
     ],
     "evidence": {
       "rule": "resident-declaration",
       "declaredBy": "WebeWizard",
-      "reference": "Resident WebeWizard declared adoption of the reviewed charter and policies effective 2026-10-31 America/Phoenix; no additional organizational, legal, or hosting requirements are known to the resident.",
+      "reference": "Resident requested removal of stale draft headings in session 016cbab3-3e52-4d65-8cd7-b53bdc247517 on 2026-10-31 America/Phoenix; exact amendment preview requires confirmation before apply.",
       "authenticated": false
-    }
+    },
+    "history": [
+      {
+        "adoptedOn": "2026-10-31",
+        "recordedAt": "2026-11-01T01:51:04.062Z",
+        "charter": {
+          "path": "charter.md",
+          "sha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+          "version": null
+        },
+        "policies": [
+          {
+            "path": "policies/authority-and-policy.md",
+            "sha256": "2b50c02a30d877596799ff269040c121d475186b4e4be8877239286980f9d8a9"
+          },
+          {
+            "path": "policies/continuity-and-accountability.md",
+            "sha256": "460abb417f117d4e429b932c041baca153ee5957285d7b3a3bc105878aa60e5f"
+          },
+          {
+            "path": "policies/council-delegation.md",
+            "sha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+          },
+          {
+            "path": "policies/records-and-privacy.md",
+            "sha256": "e4ac19ed06b73075bdad212de0b47ecf55b4edd7d752a85e2617a8187ff8bfce"
+          },
+          {
+            "path": "policies/resources-and-workforce.md",
+            "sha256": "c8feb7c171635be227875eefb17f782f7e9ea2964d70ea7d9c9927963a4b3420"
+          },
+          {
+            "path": "policies/service-catalogue.md",
+            "sha256": "2b8e264375708b5bb5197fd57bf0d9495f4fd30a64ba7cda4720869be7ecce47"
+          },
+          {
+            "path": "policies/workforce-delegation.md",
+            "sha256": "0a50825cc53b1bd2bde68848ed331f9fca05a4be6221aed2cc9f2709d5d7877c"
+          }
+        ],
+        "evidence": {
+          "rule": "resident-declaration",
+          "declaredBy": "WebeWizard",
+          "reference": "Resident WebeWizard declared adoption of the reviewed charter and policies effective 2026-10-31 America/Phoenix; no additional organizational, legal, or hosting requirements are known to the resident.",
+          "authenticated": false
+        },
+        "supersededAt": "2026-11-01T03:26:18.454Z",
+        "summary": "Remove stale DRAFT headings and pending-adoption notices from the adopted charter and seven policies; correct charter adoption-status wording while preserving authority limits, genuine proposals, and prior adoption history."
+      }
+    ]
   }
 }

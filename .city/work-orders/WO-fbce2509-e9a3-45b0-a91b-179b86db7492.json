@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "id": "WO-fbce2509-e9a3-45b0-a91b-179b86db7492",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "title": "Add a Repository City overview page",
+  "request": "Create a dedicated page on the existing React website describing the webe-city project using only a resident-approved high-level overview. Link it from the main navigation and provide navigation back to About. Preserve the current design, About content, accessibility, and GitHub Pages project-path behavior. Do not expose private source code, city records, credentials, personal information, or unapproved operational details. Delivery requires the applicable city authorization; push, merge, publication, deployment, workflow changes, and making webe-city public are not authorized by this petition.",
+  "acceptanceCriteria": [
+    "A dedicated Repository City page explains the resident-approved purpose, resident and agent roles, request-to-delivery workflow, and pilot limitations in original concise prose without copying private source or records.",
+    "Main navigation reaches the new page and returns to About; direct loading and refresh work beneath /webe-website/ without requiring server rewrites.",
+    "Existing About content and visual design are preserved; both pages support semantic landmarks, skip navigation, keyboard focus, reduced motion, accessible contrast, and no horizontal overflow at 320px and desktop widths.",
+    "Related documentation and tests cover both pages and navigation; the production build and site checks pass with assets resolving under /webe-website/.",
+    "Delivery stays within site on a non-default branch plus required separate city administrative records, with independent inspection and resident acceptance before merge; no push, public release, deployment, workflow changes, or change to webe-city visibility is performed without separate approval."
+  ],
+  "projectIds": [
+    "website"
+  ],
+  "status": "awaiting-merge",
+  "createdAt": "2026-11-01T03:16:47.922Z",
+  "updatedAt": "2026-11-01T04:12:28.362Z",
+  "history": [
+    {
+      "from": null,
+      "to": "received",
+      "reason": "Petition received as draft intake, not delivery authorization.",
+      "timestamp": "2026-11-01T03:16:47.922Z"
+    },
+    {
+      "from": "received",
+      "to": "triaged",
+      "reason": "Resident confirmed the distinct website overview petition and limited high-level draft disclosure. Project website maps to site; private source and records, workflows, visibility changes, push, merge, public release and deployment are excluded. Adopted revision hashes validate with no drift. Resident requests Council review; prepare a site-only proposal for independent Council authorization, return, rejection or referral.",
+      "timestamp": "2026-11-01T03:27:25.333Z"
+    },
+    {
+      "from": "triaged",
+      "to": "proposed",
+      "reason": "Resident confirmed proposal and intake advancement in session 016cbab3-3e52-4d65-8cd7-b53bdc247517: dedicated #/webe-city React page; About return navigation, shared current styling, page title/focus handling, responsive navigation, no new dependencies. Original high-level copy covers municipal metaphor, human-directed agents, planned/authorized/independently inspected work and pilot limits. Exclude private source/records/internal details, external repository links and open-source claims. Update site docs/tests; build/test and browser verification of switching, direct refresh, accessibility and no overflow at 320px/desktop. All five canonical criteria apply. Site-only implementation on a non-default branch if subsequently authorized; recovery by abandoning branch, main unchanged. Separate city records; no workflows, push, merge, public release, deployment or visibility changes. Independent Council review required; any reserved matter referred to resident.",
+      "timestamp": "2026-11-01T03:27:37.227Z"
+    },
+    {
+      "from": "proposed",
+      "to": "awaiting-approval",
+      "reason": "Resident confirmed proposal and advancement to independent City Council review in session 016cbab3-3e52-4d65-8cd7-b53bdc247517. The proposal meets the five documented criteria as a bounded site-only draft; Council must assess all reserved matters and record authorize, return, reject or refer. No delivery authorization or public release has been granted.",
+      "timestamp": "2026-11-01T03:27:42.274Z"
+    },
+    {
+      "from": "awaiting-approval",
+      "to": "authorized",
+      "reason": "Delivery authorized by resident in DEC-9d65015f-2361-4a86-9032-ec1182888d50; recorded, not authenticated.",
+      "timestamp": "2026-11-01T03:30:35.994Z"
+    },
+    {
+      "from": "authorized",
+      "to": "in-progress",
+      "reason": "Begin implementation on city/WO-fbce2509-overview at c20d072; assigned municipal-software-engineer; site-only authorized scope.",
+      "timestamp": "2026-11-01T03:36:21.627Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Ready for independent inspection on city/WO-fbce2509-overview at c20d072; npm run build and npm test pass; Chrome direct-load smoke checks pass. Browser keyboard, reduced-motion and 320px/desktop layout checks not automated.",
+      "timestamp": "2026-11-01T03:50:36.692Z"
+    },
+    {
+      "from": "inspection",
+      "to": "in-progress",
+      "reason": "FAIL independent delivery inspection: city/WO-fbce2509-overview at c20d0724d8a093d449f51e65590613c906a09bec plus uncommitted delivery. C1 pass; C2 fail: City keyboard skip changes hash to #main-content and refresh loads About (site/src/App.js:64,85; routes.js:4-6). C3 fail: Chrome 156 at 320x900, City clientWidth=305, scrollWidth=320, scrollX=15 (site/src/styles.css:15,17); desktop, keyboard focus, skip activation, landmarks and reduced motion verified. C4 pass: npm.cmd test --prefix site exit 0; Vite build write:false/configFile:false exit 0, all outputs byte-match existing dist. C5 pass scoped: website->site, non-default branch, active assigned municipal-software-engineer matches reported author, linked draft-only resident DEC-9d65015f-2361-4a86-9032-ec1182888d50 authenticated:false; no publication or acceptance. App.js SHA256 0c5c00b062d3a5790a7d3de97bde8257d78213fe0011ea6b0f71376eeffe5ff8; styles.css SHA256 a2a8dfc284bacfd92a282b21da50ce686adbfefe63f52e98b9ed8328dd197bdb. Own browsers/loopback servers stopped, delivery untouched; return reproducible findings unchanged to Clerk/resident.",
+      "timestamp": "2026-11-01T03:55:51.110Z"
+    },
+    {
+      "from": "in-progress",
+      "to": "inspection",
+      "reason": "Repair only independent Inspector findings F1/F2 on city/WO-fbce2509-overview at base c20d0724d8a093d449f51e65590613c906a09bec. Chrome 156 CDP: at 320x900 clientWidth=305 and scrollWidth=305 on City; keyboard Enter on skip link preserves #/webe-city and refresh; both route titles/nav/back/refresh and 320px/desktop layouts pass. npm run build, npm test, and reduced-motion check pass.",
+      "timestamp": "2026-11-01T04:05:22.636Z"
+    },
+    {
+      "from": "inspection",
+      "to": "awaiting-merge",
+      "reason": "PASS narrow independent reinspection at base c20d0724d8a093d449f51e65590613c906a09bec plus current worktree repairs. Chrome 156: City 320x900 clientWidth=305 scrollWidth=305 scrollX=0 with 15px vertical scrollbar; keyboard Enter on skip link retains #/webe-city and focuses main; refresh retains City title/content. City and About 1440x900 have no horizontal overflow; navigation/back and reduced motion pass. npm test exit 0; Vite production build write:false exit 0. Prior C1/C4/C5 full-inspection evidence retained; scope and resident draft-only authorization unchanged.",
+      "timestamp": "2026-11-01T04:12:28.362Z"
+    }
+  ],
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

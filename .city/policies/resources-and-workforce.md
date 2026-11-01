@@ -1,6 +1,6 @@
-# Resources, workforce, assets, and suppliers — DRAFT
+# Resources, workforce, assets, and suppliers
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** No budget, staffing appointment, tool permission, purchase, license choice, or supplier commitment is authorized.
+**Adopted policy.** The resident declaration, effective date, and exact adopted revision are recorded in `../config.json`. This policy alone authorizes no budget, staffing appointment, tool permission, purchase, license choice, or supplier commitment; applicable charter appointments and workforce delegation remain separate.
 
 **Proposed owner:** City Manager. Clerk maintains authority/appointment references; Records Officer preserves resource evidence; independent Auditor reviews reconciliation and conflicts. The Engineering Manager leads engineering staffing; Human Resources administers specialist recruitment and personnel records under the separate [workforce delegation policy](workforce-delegation.md). Missing finance, legal, security, or procurement expertise must be escalated, not impersonated.
 

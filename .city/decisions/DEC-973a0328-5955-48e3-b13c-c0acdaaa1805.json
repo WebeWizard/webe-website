@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "id": "DEC-973a0328-5955-48e3-b13c-c0acdaaa1805",
+  "cityId": "d6e12293-5672-47d6-8b85-bf93b024949a",
+  "kind": "acceptance",
+  "workOrderIds": [
+    "WO-8d821eaa-a09b-42c9-9809-7b171a9dc4d6"
+  ],
+  "outcome": "accept",
+  "decidedBy": "resident",
+  "basis": "resident-decision",
+  "routineClass": null,
+  "reservedMatters": [],
+  "reason": "Record resident acceptance of the inspected React and Vite upgrade after verified PR merge. Existing main-triggered Pages workflow completed successfully; no manual dispatch by this assistant. Preserve the inspection limitation that physical keyboard traversal was not independently verified.",
+  "subject": {
+    "workOrderSha256": "633b9990f4ae75a48e4a89dfc6d59cd6dc38deaac291d9d8f747381996221766",
+    "charterSha256": "9784fcc984f6de2e585969300835a22808583c76bdf98630dfc93237daeca672",
+    "delegationPolicySha256": "b2d8cca66c7105686adbe8ac69cbb6b4cb1353b0c12c080b078961aef2b682e9"
+  },
+  "evidence": {
+    "declaredBy": "WebeWizard",
+    "reference": "Resident reported merged in session 53d40f1a-4890-4384-baaa-05b8cf72e2e9. GitHub verifies PR https://github.com/WebeWizard/webe-website/pull/2 merged at 2026-11-01T03:13:54Z with merge commit c20d0724d8a093d449f51e65590613c906a09bec. Pages run https://github.com/WebeWizard/webe-website/actions/runs/41268331357 completed successfully for the same commit.",
+    "authenticated": false
+  },
+  "createdAt": "2026-11-01T03:16:40.284Z",
+  "provenance": {
+    "source": "local-draft",
+    "plugin": {
+      "name": "repository-city",
+      "version": "0.3.0"
+    }
+  }
+}

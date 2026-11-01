@@ -1,17 +1,17 @@
-# Repository City charter — DRAFT
+# Repository City charter
 
-**DRAFT TEMPLATE — pending explicit resident adoption.** This is proposed governance, not an adopted charter, appointment, authorization, or completed record. Installing the plugin or initializing `.city/` does not found a city.
+**Adopted governance.** The resident adoption declaration, effective date, and exact charter and policy revisions are recorded in `config.json`. Decisions are recorded, not authenticated. Installing the plugin or initializing `.city/` alone does not found a city or authorize delivery.
 
 | Founding requirement | Recorded value / status |
 |---|---|
 | Repository and jurisdiction | `webe-website` repository at the explicitly selected workspace root |
 | Initial authorized resident | WebeWizard (resident-declared; identity and decision rights are not independently authenticated by the plugin) |
 | Delivery authorization route | City Council under the adopted council delegation policy; reserved matters and final acceptance by the resident. Decisions are recorded, not authenticated. |
-| Adoption decision and exact charter revision | WebeWizard's declaration; the adoption record will bind it to the exact charter and policy digests |
-| Effective date and time zone | Upon adoption on 2026-10-31, America/Phoenix |
+| Adoption decision and exact charter revision | WebeWizard's declaration; the adoption record binds it to the exact charter and policy digests |
+| Effective date and time zone | 2026-10-31, America/Phoenix; subsequent amendments retain their own recorded effective dates |
 | Applicable organizational, legal, and hosting requirements | Resident reports no additional requirements known; not independently verified |
 
-## Proposed constitutional rules
+## Constitutional rules
 
 1. **Residents are humans.** The initial decision-maker is the single authorized human above, not an invented identity. Other residents and any multi-resident decision rules require explicit adoption. Agents are municipal employees, not residents, sovereigns, elected representatives, or a simulated voting body.
 2. **Authority is delegated, never self-created.** Adopting this default charter appoints only the eleven pilot offices listed below to their bundled agent definitions. The resident remains sovereign and delegates the authorization of routine delivery to the City Council only through the adopted [council delegation policy](policies/council-delegation.md), and specialist engineering appointments to the Engineering Manager only through the adopted [workforce delegation policy](policies/workforce-delegation.md). Residents reserve charter adoption/amendment, decision rights, policy adoption, the council's powers, changes to the default roster, appointments to offices other than specialist engineers under that workforce delegation, permission increases, resource limits, and final acceptance of delivered work. These reserved matters — governance, security (secrets and permissions), deletion, deployment, publication, and expenditure — are referred to the resident, never decided by the council. A roster appointment does not grant tool permissions or authorize delivery; each work order still requires a recorded authorization decision. No employee may approve its own mandate or expense request, certify its own implementation, or treat self-review as independent inspection.
@@ -64,4 +64,4 @@ Policy status is not case status. Charter/policy text remains **draft** until ge
 - [Specialist engineering appointments and personnel](policies/workforce-delegation.md)
 - [Continuity, emergencies, ethics, and accountability](policies/continuity-and-accountability.md)
 
-These policies are drafts too. Their procedures are proposed responsibilities, not proof of enforced controls.
+These policies are included in the recorded adoption. Their procedures establish responsibilities, not proof of enforced controls or completed actions.
